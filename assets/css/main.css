@@ -335,7 +335,6 @@ input, select, textarea {
 
 	.row {
 		display: flex;
-		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
 	}
@@ -2866,6 +2865,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		flex-wrap: wrap;
 		width: 100%;
 		margin: 0 0 3em 0;
 		padding: 0;
@@ -2885,22 +2885,27 @@ input, select, textarea {
 
 			.statistics li.style1 {
 				background-color: #efa8b0;
+				color: white;
 			}
 
 			.statistics li.style2 {
 				background-color: #c79cc8;
+				color: white;
 			}
 
 			.statistics li.style3 {
 				background-color: #a89cc8;
+				color: white;
 			}
 
 			.statistics li.style4 {
 				background-color: #9bb2e1;
+				color: white;
 			}
 
 			.statistics li.style5 {
 				background-color: #8cc9f0;
+				color: white;
 			}
 
 			.statistics li strong, .statistics li b {
@@ -2914,12 +2919,21 @@ input, select, textarea {
 
 			.statistics li:first-child {
 				border-top-left-radius: 8px;
-				border-bottom-left-radius: 8px;
+				/* border-bottom-left-radius: 8px; */
 			}
 
 			.statistics li:last-child {
-				border-top-right-radius: 8px;
+				/* border-top-right-radius: 8px; */
 				border-bottom-right-radius: 8px;
+			}
+
+			.statistics li:nth-child(5){
+				border-top-right-radius: 8px;
+				/* border-bottom-right-radius: 8px; */
+			}
+			.statistics li:nth-child(11){
+				/* border-top-right-radius: 8px; */
+				border-bottom-left-radius: 8px;
 			}
 
 			.statistics li .icon {
@@ -2931,15 +2945,31 @@ input, select, textarea {
 					line-height: 1.3;
 				}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1056px) {
 
 			.statistics li strong, .statistics li b {
 				font-size: 1.5em;
 			}
 
+			.statistics li:nth-child(4) {
+					border-top-right-radius: 8px;
+			}
+
+			.statistics li:nth-child(5) {
+					border-radius: 0px;
+			}
+
+			.statistics li:nth-child(11) {
+					border-radius: 0px;
+			}
+
+			.statistics li:nth-child(13) {
+					border-bottom-left-radius: 8px;
+			}
+
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 855px) {
 
 			.statistics {
 				display: block;
@@ -2958,6 +2988,58 @@ input, select, textarea {
 					border-bottom-left-radius: 8px;
 				}
 
+				.statistics li:nth-child(4) {
+					display: none;
+				}
+
+				.statistics li:nth-child(5) {
+					border-radius: 0px;
+				}
+				
+
+				.statistics li:nth-child(6) {
+					display: none;
+				}
+
+				.statistics li:nth-child(7) {
+					border-bottom-left-radius: 8px;
+					border-bottom-right-radius: 8px;
+				}
+
+				.statistics li:nth-child(8) {
+					display: none;
+				}
+
+				.statistics li:nth-child(9) {
+					display: none;
+				}
+
+				.statistics li:nth-child(10) {
+					display: none;
+				}
+				
+				.statistics li:nth-child(11) {
+					border-radius: 0px;
+					display: none;
+				}
+
+				.statistics li:nth-child(12) {
+					display: none;
+				}
+
+				.statistics li:nth-child(13) {
+					display: none;
+				}
+
+				.statistics li:nth-child(14) {
+					display: none;
+				}
+
+				.statistics li:nth-child(15) {
+					display: none;
+				}
+
+				
 				.statistics li .icon:before {
 					font-size: 3.75rem;
 				}
@@ -3801,3 +3883,15 @@ input, select, textarea {
 /* .project-link:hover h3 {
 	text-decoration: 1px dotted underline;
 } */
+
+li.skill-icon {
+	font-size: 70px;
+	padding: 0;
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	min-width: 170px;
+	width: 100%;
+}

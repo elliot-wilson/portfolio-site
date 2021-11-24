@@ -3783,3 +3783,21 @@ input, select, textarea {
 			}
 
 		}
+
+.project-img {
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+}
+
+.project-link {
+	border-bottom: none;
+}
+
+.project-link:hover * {
+	cursor: pointer;
+}
+
+/* .project-link:hover h3 {
+	text-decoration: 1px dotted underline;
+} */

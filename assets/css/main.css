@@ -3650,10 +3650,10 @@ input, select, textarea {
 
 		#main header.major h2:after {
 			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #ffb703, #fb8500, #219ebc);
-			background-image: -webkit-linear-gradient(90deg, #ffb703, #fb8500, #219ebc);
-			background-image: -ms-linear-gradient(90deg, #ffb703, #fb8500, #219ebc);
-			background-image: linear-gradient(90deg, #ffb703, #fb8500, #219ebc);
+			background-image: -moz-linear-gradient(90deg, #fb8500, #ffb703, #219ebc);
+			background-image: -webkit-linear-gradient(90deg, #fb8500, #ffb703, #219ebc);
+			background-image: -ms-linear-gradient(90deg, #fb8500, #ffb703, #219ebc);
+			background-image: linear-gradient(90deg, #fb8500, #ffb703, #219ebc);
 		}
 
 		#main table tbody tr {

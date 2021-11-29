@@ -5,6 +5,7 @@
 	Stellar by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Color pallete from https://coolors.co/8ecae6-219ebc-126782-023047-ffb703-fd9e02-fb8500
 */
 
 html, body, div, span, applet, object,
@@ -3916,4 +3917,9 @@ li.skill-icon {
 	height: 100px;
 	min-width: 170px;
 	width: 100%;
+}
+
+.resume-list > li {
+	display: flex;
+	justify-content: space-between;
 }

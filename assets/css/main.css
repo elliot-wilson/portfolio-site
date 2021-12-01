@@ -2956,6 +2956,10 @@ input, select, textarea {
 				border-top-right-radius: 8px;
 			}
 
+			.statistics li:nth-child(8) {
+				border-bottom-left-radius: 8px;
+			}
+
 			.statistics li:nth-child(11) {
 				border-radius: 0px;
 			}

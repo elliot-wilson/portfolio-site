@@ -29,9 +29,9 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="#aboutme" class="active">About Me</a></li>
-							<li><a href="#myprojects">Projects</a></li>
-							<li><a href="#myskills">Skills</a></li>
-							<li><a href="#myexperience">Experience</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#resume">Resume</a></li>
 						</ul>
 					</nav>
 
@@ -45,12 +45,12 @@
 										<header class="major">
 											<h2>Hey, I'm Elliot! &#128075;</h2>
 										</header>
-										<p>I'm a software engineer who's skilled in JavaScript, React, Redux, MongoDB, and Ruby on Rails. I've been on unusual
-										journey: I have an academic background in ancient Greek history and archaeology, and I've also spent time as a Workday
-										Payroll implementation consultant. Now, I'm a full-stack developer who is just as energized by building RESTful APIs as
-										I am by improving UI/UX through responsive design.
+										<p>I'm Elliot Wilson, a software engineer with an unusual journey. I got degrees in ancient Greek history/archaeology from Harvard
+										and Princeton before I discovered that my real calling was software engineering. There were signs along the way, of
+										course, including a few years I spent as a consultant specializing in implementing Workday's HRIS software. I'm
+										currently building projects using Ruby on Rails as well as the MERN stack (MongoDB, Express.js, React / Redux, Node.js).</p>
 										
-										In my spare time, you can catch me training for the NYCRUNS Brooklyn Marathon and DJing on the radio at <a href="https://spinitron.com/WPRB/show/217460/ELLIOT" target="_blank" rel="noopener noreferrer">WPRB</a>.</p>
+										<p>In my spare time, you can catch me training for the NYCRUNS Brooklyn Marathon and DJing on the radio at <a href="https://spinitron.com/WPRB/show/217460/ELLIOT" target="_blank" rel="noopener noreferrer">WPRB</a>.</p>
 										<ul class="actions">
 											<li><a href="https://www.linkedin.com/in/elliot-wilson-4897a81b9/" class="button" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
 											<li><a href="https://angel.co/u/elliot-wilson-dev" class="button" target="_blank" rel="noopener noreferrer">AngelList</a></li>
@@ -62,7 +62,7 @@
 							</section>
 
 						<!-- First Section -->
-							<section id="myprojects" class="main special">
+							<section id="projects" class="main special">
 								<header class="major">
 									<h2>Projects</h2>
 								</header>
@@ -86,7 +86,7 @@
 											<img src="images/poly-glot.gif" class="icon major style5 project-img"/>
 											<h3>Poly-Glot</h3>
 										</a>
-										<p>Vanilla JavaScript word puzzle generator based on custom algorithm. Inspired by the New York Times' <a href="https://www.nytimes.com/puzzles/spelling-bee" target="_blank" rel="noopener noreferrer">Spelling Bee</a>.</p>
+										<p>Vanilla JavaScript word puzzle generator based inspired by the New York Times' <a href="https://www.nytimes.com/puzzles/spelling-bee" target="_blank" rel="noopener noreferrer">Spelling Bee</a>.</p>
 									</li>
 								</ul>
 								<footer class="major">
@@ -97,10 +97,10 @@
 							</section>
 
 						<!-- Second Section -->
-							<section id="myskills" class="main special">
+							<section id="skills" class="main special">
 								<header class="major">
 									<h2>Skills & Technologies</h2>
-									<p>Here is a sample of the languages and technologies I love working with. I'm always teaching myself more.</p>
+									<p>Here is a sample of the languages and technologies I've been working with lately.</p>
 								</header>
 								<ul class="statistics">
 									<li class="style1 icon skill-icon">
@@ -151,49 +151,28 @@
 								</ul>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button" target="_blank" rel="noopener noreferrer">Learn More</a></li>
+										<li><a href="https://github.com/elliot-wilson" class="button" target="_blank" rel="noopener noreferrer">Learn More</a></li>
 									</ul>
 								</footer>
 							</section>
 
 						<!-- Get Started -->
-							<section id="myexperience" class="main special">
+							<section id="resume" class="main special">
 								<header class="major">
-									<h2>Experience</h2>
-									<h2>Education</h2>
-									<ul class="resume-list">
-										<li>
-											<div class="education-item-details">
-												<h3>Princeton University</h3>
-												<h4>Master of Arts - Classics</h4>
-											</div>
-											<div class="timeline">
-												2017-2021
-											</div>
-										</li>
-										<li>
-											<div class="education-item-details">
-												<h3>Harvard University</h3>
-												<h4>Bachelor of Arts - Classics</h4>
-											</div>
-											<div class="timeline">
-												2011-2015
-											</div>
-										</li>
-									</ul>
-									<h2>Professional</h2>
-									<ul class="resume-list">
-										<li>
-											<div>
-												<h3>Mercer Digital</h3>
-												<h4>Workday Payroll Implementation Consultant</h4>
-											</div>
-											<div>
-												2015-2017
-											</div>
-										</li>
-									</ul>
+									<h2>Resume</h2>
+									<p>Like reading resumes? Me neither! Here's mine anyway.</p>
 								</header>
+								<div id="adobe-dc-view"></div>
+								<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+								<script type="text/javascript">
+									document.addEventListener("adobe_dc_view_sdk.ready", function () {
+										var adobeDCView = new AdobeDC.View({ clientId: "6ca5eac3891341d8bd4b3f72be46453f", divId: "adobe-dc-view" });
+										adobeDCView.previewFile({
+											content: { location: { url: "https://portfolio-ew.s3.us-east-1.amazonaws.com/Elliot-Wilson-resume.pdf" } },
+											metaData: { fileName: "Elliot-Wilson-resume.pdf" }
+										}, { embedMode: "SIZED_CONTAINER" });
+									});
+								</script>
 								<footer class="major">
 									<ul class="actions special">
 										<li><a href="generic.html" class="button primary">Get Started</a></li>
